@@ -1,4 +1,41 @@
-<mat-slider min="1" max="5" step="0.5" value="1.5">
-  <input matSliderThumb>
-</mat-slider>
+<mat-sidenav-container fullscreen>
+
+  <mat-sidenav #sidenav>
+
+    <mat-nav-list (click)="sidenav.close()">
+      <a mat-list-item routerLink="/">
+        <mat-icon class="mat-18">library_books</mat-icon>
+        <span>courses</span>
+      </a>
+
+      <a mat-list-item routerLink="about">
+        <mat-icon class="mat-18">question_answer</mat-icon>
+        <span>About</span>
+      </a>
+
+      <a mat-list-item>
+        <mat-icon class="mat-18">person_add</mat-icon>
+        <span>Register</span>
+      </a>
+
+      <a mat-list-item>
+        <mat-icon class="mat-18">account_circle</mat-icon>
+        <span>Login</span>
+      </a>
+    </mat-nav-list>
+
+  </mat-sidenav>
+
+  <mat-toolbar color="primary">
+
+    <button mat-icon-button (click)="sidenav.open()">
+      <mat-icon class="mat-18">menu</mat-icon>
+    </button>
+
+  </mat-toolbar>
+
+  <router-outlet></router-outlet>
+
+
+</mat-sidenav-container>
 
