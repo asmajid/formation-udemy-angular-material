@@ -32,6 +32,25 @@
       <mat-icon class="mat-18">menu</mat-icon>
     </button>
 
+    <a mat-button [matMenuTriggerFor]="dropdown">
+      Screens
+    </a>
+
+    <mat-menu #dropdown>
+      <button mat-menu-item routerLink="/">Courses</button>
+      <button mat-menu-item routerLink="about">About</button>
+    </mat-menu>
+
+    <button mat-button (click)="sidenav.open()">
+      <mat-icon class="mat-18">person_add</mat-icon>
+      Register
+    </button>
+
+    <button mat-button (click)="sidenav.open()">
+      <mat-icon class="mat-18">account_circle</mat-icon>
+      Login
+    </button>
+
   </mat-toolbar>
 
   <router-outlet></router-outlet>
