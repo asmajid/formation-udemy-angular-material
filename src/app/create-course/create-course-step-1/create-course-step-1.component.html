@@ -31,6 +31,20 @@
     <mat-radio-button value="premium">Premium</mat-radio-button>
 </mat-radio-group>
 
+<mat-form-field>
+  <mat-select formControlName="category" placeholder="Select category" multiple>
+    <mat-option>None</mat-option>
+
+    <mat-optgroup label="Beginners">
+      <mat-option value="newProgramming">New To Programming</mat-option>
+      <mat-option value="newjavascript">New To JavaScript</mat-option>
+      <mat-option value="newangular">New to Angular</mat-option>
+    </mat-optgroup>
+
+    <mat-option value="INTERMEDIATE">Intermediate</mat-option>
+    <mat-option value="ADVENCED">Advenced</mat-option>
+  </mat-select>
+</mat-form-field>
 
 
 
