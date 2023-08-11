@@ -5,6 +5,13 @@
 
     <h3>Lessons To Watch:</h3>
 
+    <div cdkDropList class="lessons-list">
+
+      <div class="lesson" *ngFor="let lesson of lessons" cdkDrag>
+        {{lesson.description}}
+      </div>
+    </div>
+
   </div>
 
   <!-- div class="done">
