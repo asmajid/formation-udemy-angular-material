@@ -65,5 +65,3 @@ export class TreeDemoComponent implements OnInit {
   }
 
 }
-
-
